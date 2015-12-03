@@ -12,9 +12,6 @@ body {
 	font-size: 60px;
     top: 5%;
     cursor: pointer;
-    -webkit-transition: .3s all ease-in-out;
-    -moz-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
 }
 
 .transition {
@@ -87,11 +84,13 @@ video {
     text-align: center;
     color: white;
     border: 2px solid white;
-    z-index: 1;
+    z-index: 100;
     cursor: pointer;
+    cursor: pointer;
+    margin-top: 10px;
  }
 
- .container .readmore {
+.readmore {
     border: 2px solid white;
     color: white;
     text-align: center;
@@ -100,9 +99,7 @@ video {
     width: 150px;
     font-size: 2em;
     margin: 270px 120px;
-
-
-
+    cursor: pointer;
  }
 
 #background {
@@ -113,7 +110,7 @@ video {
     min-height: 100%;
     z-index: -1;
     opacity: 0.4;
-    object-fit: cover;
+    /*object-fit: cover;*/
 
 }
 
@@ -209,28 +206,155 @@ video {
     font-size: 12px;
 }
 
-.album-row {
-    margin-top: 20px;
-    margin: 0;
+.carousel-container{
     width: 960px;
+    margin: 0 auto;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+#carousel{
+    width: 4800px;
+    height: 100%;
+    margin-left: 0px;
+    -webkit-transition: all 0.3s;
+}
+
+.carousel-item{
+    width: 960px;
+    position: relative;
+    height: 100%;
     float: left;
-    height: 200px;
+}
+    
+#carousel-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    left: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
 }
 
-.album-row .album-item {
-    width: 200px;
-    height: auto;
-}
+/* Styling for the carousel next button */
+#carousel-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    right: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
 
 }
 
-.album-row2 {
-    width: 960;
-    margin-top: 200px;
-}
-
-.album-row2 .album-item2{
-    height:50;
-    width:440;
+#background {
+    background: url('background.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
     position: absolute;
 }
+#explorelink {
+    position: absolute;
+    color: white;
+    bottom: 90px;
+    right: 90px;
+    text-align: right;
+    z-index: 100;
+}
+#subheading {
+    font-size: 24px;
+}
+#heading {
+    font-size: 48px;
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 518px;
+    top: 50%;
+    margin-top: -269px;
+}
+#content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Question 1 */
+#modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    display: none;
+    z-index: 100;
+}
+#modal-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+#modal-box {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    z-index: 100;
+}
+
+.about {
+    background-color: black;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    color: white;
+    margin: 10px auto;
+
+
+}
+
+.albumslink {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 22px;
+    cursor: pointer;
+    width: 80px;
+    margin: 12px auto;
+    height: 30px;
+}
+   
+a:link {
+    text-decoration: none;
+}
+#modal-footer {
+    float: right;
+    margin-right: 10px;
+
+}
+

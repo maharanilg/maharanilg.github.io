@@ -3,17 +3,33 @@
 <head>
 	<link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="assets/jquery-1.9.1.js"></script>
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </head>
 <body>
-	<div id="topbar-text">MR.</div>
+    <a href="index.html">
+        <div id="topbar-text">MR.</div>
+    </a>
 	<video id="video" muted autoplay loop>
 		<source src="assets/img/DSC_1447.mov" type="video/mp4">Your browser does not support the video tag
 	</video>
     <div class = "quote">A great photograph is one that fully expresses what one feels, in the deepest sense, about what is being photographed.</div>
-    <div class = "author">-Ansel Adams</div>
-    <a href="albums.html">
-        <div class="explore">Explore</div>
-    </a>
+    <div class = "author">-Ansel Adams</div> 
+      
+    
+    <div id="modal-container">
+        <div id="modal-overlay"></div>
+            <div id="modal-box">
+                <div class="about">About</div>
+                <a href="albums.html">
+                    <div class="albumslink">Albums</div>
+                </a>
+            </div>
+    </div>
+    
+    <!-- Singlevisual -->
+    <div id="explorelink"> 
+         <div class="explore">Explore</div> 
+    </div>
 </body>
 </html>
