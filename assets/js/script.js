@@ -46,4 +46,16 @@ $(document).ready(function() {
     }
   });
 
+$(function(){
+  var prev;    
+
+  $('.albuminfo').hover(function(){
+  prev = $(this).text();
+      $(this).text("Fun Day!");
+  }, function(){
+      $(this).text(prev)
+  });
+})
+
+
 });
