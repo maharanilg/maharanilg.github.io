@@ -30,7 +30,7 @@ $(document).ready(function() {
 
   $('#carousel-next').click(function(){
     var marginLeft = parseInt($('#carousel').css('margin-left').replace("px", ""));
-    if (marginLeft == -3840) {
+    if (marginLeft == -2880) {
       return false;
     } else {
       $('#carousel').css('margin-left','-=960');
@@ -45,4 +45,5 @@ $(document).ready(function() {
       $('#carousel').css('margin-left', '+=960');
     }
   });
+
 });
