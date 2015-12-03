@@ -39,9 +39,6 @@ video {
     min-width: 100%;
     min-height: 100%;
     z-index: 1;
-    object-fit: cover;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     background-size: cover;
     opacity: 0.6;
 }
@@ -78,9 +75,6 @@ video {
     width: 7%;
     top: 5%;
     padding: .25em 0;
-    -webkit-transition: .3s all ease-in-out;
-    -moz-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
     text-align: center;
     color: white;
     border: 2px solid white;
